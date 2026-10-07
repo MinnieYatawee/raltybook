@@ -1,0 +1,1066 @@
+/* =====================================================
+   RESET / GLOBAL
+===================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+
+    padding: 0;
+
+    font-family: "Anuphan", sans-serif;
+
+    color: #4d4039;
+
+    background-color: #fffef2;
+
+    line-height: 1.7;
+}
+
+
+img {
+    max-width: 100%;
+
+    height: auto;
+
+    display: block;
+}
+
+
+:root {
+
+    --cream: #fffef2;
+
+    --cream-light: #ffffe8;
+
+    --mint: #dceeea;
+
+    --mint-header: #bdd8d3;
+
+    --mint-border: #c5ddd8;
+
+    --brown: #684f47;
+
+    --brown-dark: #443936;
+
+    --brown-light: #806961;
+
+    --red: #a84f46;
+
+}
+
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.header {
+
+    background-color: var(--mint-header);
+
+    padding: 12px 0;
+
+}
+
+
+.header .navbar {
+
+    min-height: 55px;
+
+}
+
+
+.logo {
+
+    color: #fffceb !important;
+
+    font-family: "Neonderthaw", cursive;
+  
+  font-style: normal;
+
+    font-size: 23px;
+
+    letter-spacing: 1.5px;
+
+    font-weight: 400;
+
+}
+
+
+.navbar-nav {
+
+    gap: 30px;
+
+}
+
+
+.nav-link {
+
+    color: #fffceb !important;
+
+    font-family: "Petit Formal Script", cursive;
+
+  font-style: normal;
+
+    font-size: 14px;
+
+    font-weight: 400;
+
+    padding: 8px 0 !important;
+
+}
+
+
+.nav-link:hover {
+
+    color: white !important;
+
+}
+
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+
+    position: relative;
+
+    background-color: var(--cream);
+
+    padding: 50px 0 10px;
+    
+    overflow: hidden;
+}
+
+
+/* เส้นด้านบน */
+
+.hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 15px;
+
+    background-color: #ded6c9;
+
+    opacity: 0.7;
+
+}
+
+
+
+/* =========================
+   HERO TEXT
+========================= */
+
+.hero-text {
+
+    padding-left: 5px;
+
+    padding-right: 0;
+
+}
+
+
+.hero-text p {
+
+    margin: 0;
+
+    font-size: 31px;
+
+    line-height: 1.4;
+
+    font-weight: 500;
+
+    color: var(--brown-dark);
+
+}
+
+
+.hero-text h1 {
+
+    margin: 0;
+
+    font-size: 43px;
+
+    line-height: 1.25;
+
+    font-weight: 500;
+
+    color: var(--brown-dark);
+
+}
+
+
+.hero-text h1 span {
+
+    display: block;
+
+    color: var(--red);
+
+    font-size: 72px;
+
+    line-height: 1.05;
+
+    font-weight: 600;
+
+}
+
+
+.hero-text h2 {
+
+    margin: 12px 0 0;
+
+    font-size: 26px;
+
+    line-height: 1.4;
+
+    font-weight: 700;
+
+    color: var(--brown-dark);
+
+}
+
+
+
+/* =====================================================
+   BOOK
+===================================================== */
+
+.book-area {
+    width: 100%;
+
+    min-height: 360px;
+
+    display: flex;
+    
+    align-items: center;
+
+    justify-content: center;
+    
+    position: relative;
+}
+
+
+/* ปกหน้า */
+
+.book-front {
+
+    width: 530px;
+
+    max-width: 40%;
+
+    position: relative;
+
+    z-index: 3;
+
+}
+
+
+/* ข้อความญี่ปุ่น */
+
+.vertical-text {
+
+    margin: 0 18px;
+
+    writing-mode: vertical-rl;
+
+    text-orientation: mixed;
+
+    white-space: nowrap;
+    
+ font-family: "DotGothic16", sans-serif;
+
+  font-weight: 400;
+  
+  font-style: normal;
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    letter-spacing: 1px;
+
+    color: #705e57;
+
+}
+
+
+/* ปกหลัง */
+
+.book-back {
+
+    width: 530px;
+
+    max-width: 40%;
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+
+/* =====================================================
+   SECTION 1
+===================================================== */
+
+.section-intro {
+    background-color: var(--cream);
+    padding: 70px 0;
+}
+
+.intro-box {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 65px 12%;
+    background-color: var(--cream-light);
+    border-top: 4px solid var(--mint-border);
+    border-bottom: 4px solid var(--mint-border);
+    text-align: center;
+}
+
+.intro-box p {
+    margin: 0 0 25px;
+    font-size: 20px;
+    line-height: 1.9; 
+    font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+
+.intro-box p:last-child {
+    margin-bottom: 0;
+}
+
+
+.intro-box strong {
+    color: var(--red);
+
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   SECTION TITLE
+===================================================== */
+
+.section-title {
+
+    margin-bottom: 35px;
+
+}
+
+
+.section-title span {
+
+    display: inline-block;
+
+    background-color: #ffff00;
+
+    color: #000;
+
+    padding: 3px 8px;
+
+    font-size: 16px;
+
+    line-height: 1.4;
+
+}
+
+
+.section-title h2 {
+
+    display: inline;
+
+    margin-left: 12px;
+
+    font-size: 34px;
+
+    line-height: 1.4;
+
+    font-weight: 600;
+
+    color: var(--brown-dark);
+
+}
+
+
+
+/* =========================
+   SECTION 2
+========================= */
+
+.section-why {
+    background-color: var(--cream);
+    padding: 80px 0 90px;
+}
+
+/* หัวข้อ SECTION 2 */
+.section-why .section-title {
+    margin-bottom: 45px;
+}
+
+.section-why .section-title span {
+    display: inline-block;
+    background-color: #ffff00;
+    color: #000;
+    padding: 4px 9px;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.section-why .section-title h2 {
+    display: inline;
+    margin-left: 12px;
+    font-size: 30px;
+    line-height: 1.5;
+    font-weight: 600;
+    color: var(--brown-dark);
+}
+
+/* เนื้อหาก่อนกล่องสีเขียว */
+.why-content {
+    max-width: 1000px;
+    margin: 0 auto 50px;
+}
+
+.why-content h3 {
+    margin: 0 0 18px;
+    font-family: "Bai Jamjuree", sans-serif;
+  font-style: normal;
+    font-size: 27px;
+    line-height: 1.5;
+    font-weight: 700;
+    color: var(--brown-dark);
+}
+
+.why-content p {
+    margin: 0 0 16px;
+    font-size: 18px;
+    line-height: 1.9;
+    color: #5f514b;
+}
+
+.why-content strong {
+    color: var(--red);
+    font-weight: 700;
+}
+
+/* กล่องสีเขียว */
+.why-highlight {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 60px 12%;
+    background-color: var(--mint);
+    text-align: center;
+}
+
+.why-highlight h3 {
+    margin: 0 0 22px;
+    font-size: 28px;
+    line-height: 1.5;
+    font-weight: 700;
+    color: var(--brown);
+}
+
+.why-highlight p {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 2;
+    color: #756862;
+    font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.why-highlight strong {
+    color: var(--red);
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   SECTION 3
+===================================================== */
+
+.section-benefit {
+
+    background-color: var(--cream);
+
+    padding: 100px 0 120px;
+
+}
+
+
+.benefit-heading {
+
+    margin: 0 0 60px;
+
+    font-size: 32px;
+
+    line-height: 1.4;
+
+    font-weight: 700;
+
+    color: var(--brown);
+
+}
+
+
+/* =========================
+   BENEFIT CARD
+========================= */
+
+.benefit-card {
+
+    height: 100%;
+
+    padding: 10px 15px;
+
+    text-align: center;
+
+}
+
+
+.benefit-card img {
+
+    width: 120px;
+
+    height: 120px;
+
+    object-fit: contain;
+
+    margin: 0 auto 25px;
+
+    /* กรอบ */
+
+    border: 2px solid #c5ddd8;
+
+    border-radius: 12px;
+
+    padding: 8px;
+
+    background-color: #fffef2;
+
+}
+
+
+.benefit-card h4 {
+
+    margin: 0 0 10px;
+
+    font-size: 18px;
+
+    line-height: 1.5;
+
+    font-weight: 700;
+
+    color: var(--brown);
+
+}
+
+
+.benefit-card p {
+
+    max-width: 230px;
+
+    margin: 0 auto;
+
+font-family: "Bai Jamjuree", sans-serif;
+
+  font-weight: 400;
+
+  font-style: normal;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    color: #615752; 
+
+}
+
+
+/* แถวที่สอง */
+
+.benefit-row-bottom {
+
+    margin-top: 30px;
+
+}
+
+
+
+/* =====================================================
+   FOOTER - SMALLER
+===================================================== */
+
+.footer {
+    position: relative;
+
+    padding: 50px 0;
+
+    background-image: url("images/mental-bg.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+}
+
+
+.footer::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background-color: rgba(220, 239, 235, 0.84);
+}
+
+
+.footer .container {
+    position: relative;
+
+    z-index: 1;
+}
+
+
+.footer-content {
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+.footer-content p {
+    margin: 0 0 5px;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    color: #514743;
+}
+
+
+.footer-content span {
+    color: var(--red);
+
+    font-weight: 700;
+}
+
+
+.footer-content h2 {
+    margin: 5px 0 18px;
+
+    font-size: 20px;
+
+    line-height: 1.4;
+
+    font-weight: 600;
+
+    color: #594842;
+}
+
+
+.footer-content h2 strong {
+    font-weight: 700;
+}
+
+
+.footer-content .footer-book {
+    margin-top: 15px;
+
+    font-size: 15px;
+
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+
+/* ---------------------------------
+   TABLET
+---------------------------------- */
+
+@media (max-width: 991px) {
+
+
+    .navbar-nav {
+
+        gap: 0;
+
+    }
+
+
+    .nav-link {
+
+        padding: 12px 0 !important;
+
+    }
+
+
+    /* Hero */
+
+    .hero {
+
+        padding: 75px 0;
+
+    }
+
+
+    .hero-text {
+
+        text-align: center;
+
+        padding: 0 10px 45px;
+
+    }
+
+
+    .hero-text p {
+
+        font-size: 30px;
+
+    }
+
+
+    .hero-text h1 {
+
+        font-size: 43px;
+
+    }
+
+
+    .hero-text h1 span {
+
+        font-size: 65px;
+
+    }
+
+
+    .book-area {
+
+        min-height: 430px;
+
+    }
+
+
+    .book-front,
+    .book-back {
+
+        width: 220px;
+
+    }
+
+
+    /* Section */
+
+    .intro-box {
+
+        padding: 50px;
+
+    }
+
+}
+
+
+
+/* ---------------------------------
+   MOBILE
+---------------------------------- */
+
+@media (max-width: 767px) {
+
+
+    /* Header */
+
+    .logo {
+
+        font-size: 20px;
+
+    }
+
+
+    .nav-link {
+
+        font-size: 14px;
+
+    }
+
+
+    /* Hero */
+
+    .hero {
+
+        padding: 65px 0;
+
+    }
+
+
+    .hero-text {
+
+        padding-bottom: 30px;
+
+    }
+
+
+    .hero-text p {
+
+        font-size: 24px;
+
+    }
+
+
+    .hero-text h1 {
+
+        font-size: 36px;
+
+    }
+
+
+    .hero-text h1 span {
+
+        font-size: 55px;
+
+    }
+
+
+    .hero-text h2 {
+
+        font-size: 21px;
+
+    }
+
+
+    .book-area {
+
+        min-height: 350px;
+
+    }
+
+
+    .book-front,
+    .book-back {
+
+        width: 160px;
+
+    }
+
+
+    .vertical-text {
+
+        margin: 0 10px;
+
+        font-size: 10px;
+
+    }
+
+
+    /* Section 1 */
+
+    .section-intro {
+
+        padding: 70px 0;
+
+    }
+
+
+    .intro-box {
+
+        padding: 35px 25px;
+
+    }
+
+
+    .intro-box p {
+
+        font-size: 16px;
+
+    }
+
+
+    /* Section title */
+
+    .section-title h2 {
+
+        display: block;
+
+        margin: 12px 0 0;
+
+        font-size: 27px;
+
+    }
+
+
+    /* Section 2 */
+
+    .section-why {
+
+        padding: 75px 0;
+
+    }
+
+
+    .why-content h3 {
+
+        font-size: 25px;
+
+    }
+
+
+    .why-content p {
+
+        font-size: 17px;
+
+    }
+
+
+    .why-highlight {
+
+        padding: 45px 25px;
+
+    }
+
+
+    .why-highlight h3 {
+
+        font-size: 26px;
+
+    }
+
+
+    .why-highlight p {
+
+        font-size: 15px;
+
+    }
+
+
+    /* Section 3 */
+
+    .section-benefit {
+
+        padding: 75px 0;
+
+    }
+
+
+    .benefit-heading {
+
+        font-size: 26px;
+
+        margin-bottom: 40px;
+
+    }
+
+
+    .benefit-card img {
+
+        width: 80px;
+
+        height: 80px;
+
+    }
+
+
+    /* Footer */
+
+    .footer {
+
+        padding: 75px 0;
+
+    }
+
+
+    .footer-content p {
+
+        font-size: 17px;
+
+    }
+
+
+    .footer-content h2 {
+
+        font-size: 24px;
+
+    }
+}
+/* =========================
+   LACE DIVIDER
+========================= */
+
+.lace-divider {
+    width: 100%;
+    height: 42px;
+    position: relative;
+    background-color: var(--cream);
+    overflow: hidden;
+}
+
+/* ลายลูกไม้ */
+.lace-divider::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 42px;
+
+    background-image:
+        radial-gradient(
+            circle at 50% 0,
+            transparent 12px,
+            var(--mint-border) 13px,
+            var(--mint-border) 14px,
+            transparent 15px
+        );
+
+    background-size: 28px 28px;
+    background-repeat: repeat-x;
+}
+
+/* เส้นเล็กด้านบน */
+.lace-divider::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--mint-border);
+}
