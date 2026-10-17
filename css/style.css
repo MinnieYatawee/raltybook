@@ -707,6 +707,55 @@ font-family: "Bai Jamjuree", sans-serif;
     font-weight: 700;
 }
 
+.change-section {
+    background-color: #ffffd9;
+    border-top: 5px solid #c4e0d8;
+    border-bottom: 5px solid #c4e0d8;
+    margin: 28px 15px;
+    padding: 16px 30px 34px;
+    text-align: center;
+}
+
+.change-section h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #624137;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 35px;
+}
+
+.card {
+    background-color: #e3cdb4;
+    border-radius: 25px;
+    width: 28%;
+    min-height: 145px;
+    padding: 15px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card h3 {
+    color: #80412e;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #3f342f;
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
 
 /* =====================================================
    RESPONSIVE
@@ -1018,6 +1067,26 @@ font-family: "Bai Jamjuree", sans-serif;
 
         font-size: 24px;
 
+    }
+    .change-section {
+        margin: 15px 10px;
+        padding: 20px 15px;
+    }
+
+    .change-section h1 {
+        font-size: 24px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+        min-height: 130px;
     }
 }
 /* =========================
